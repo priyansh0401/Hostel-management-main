@@ -55,7 +55,7 @@ const AttendanceTableComponent = ({
               <>
                 <tr key={student._id}>
                   <td>
-                    <Link to={`/student/${student._id}`}>{student.name}</Link>
+                    <Link to={`https://hostel-management-main-testtest.vercel.app/student/${student._id}`}>{student.name}</Link>
                   </td>
                   <td>
                     <Form>

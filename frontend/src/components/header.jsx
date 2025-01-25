@@ -13,7 +13,7 @@ const Header = ({ history }) => {
 
   const logoutHandler = () => {
     dispatch(logout());
-    history.push("/login");
+    history.push("https://hostel-management-main-testtest.vercel.app/login");
   };
   return (
     <header>
@@ -27,23 +27,23 @@ const Header = ({ history }) => {
             <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav className="ml-auto">
               <NavDropdown title="More">
-                <LinkContainer to="/attendance">
+                <LinkContainer to="https://hostel-management-main-testtest.vercel.app/attendance">
                   <NavDropdown.Item>Attendance</NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to="/addStudent">
+                <LinkContainer to="https://hostel-management-main-testtest.vercel.app/addStudent">
                   <NavDropdown.Item>Add Student</NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to="/analysis">
+                <LinkContainer to="https://hostel-management-main-testtest.vercel.app/analysis">
                   <NavDropdown.Item>View Analysis</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
               {userInfo ? (
                 <NavDropdown title={userInfo.name} id="username">
-                  <LinkContainer to="/profile">
+                  <LinkContainer to="https://hostel-management-main-testtest.vercel.app/profile">
                     <NavDropdown.Item>Profile</NavDropdown.Item>
                   </LinkContainer>
                   {userInfo.isAdmin && (
-                    <LinkContainer to="/userList">
+                    <LinkContainer to="https://hostel-management-main-testtest.vercel.app/userList">
                       <NavDropdown.Item>Users List</NavDropdown.Item>
                     </LinkContainer>
                   )}
@@ -52,7 +52,7 @@ const Header = ({ history }) => {
                   </NavDropdown.Item>
                 </NavDropdown>
               ) : (
-                <LinkContainer to="/login">
+                <LinkContainer to="https://hostel-management-main-testtest.vercel.app/login">
                   <Nav.Link>
                     <i className="fas fa-user"></i> Sign In
                   </Nav.Link>

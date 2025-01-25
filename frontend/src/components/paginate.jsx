@@ -12,9 +12,9 @@ const Paginate = ({ pages, page, isAdmin = false, keyword = "" }) => {
             to={
               !isAdmin
                 ? keyword
-                  ? `/search/${keyword}/page/${x + 1}`
-                  : `/page/${x + 1}`
-                : `/page/${x + 1}`
+                  ? `https://hostel-management-main-testtest.vercel.app/search/${keyword}/page/${x + 1}`
+                  : `https://hostel-management-main-testtest.vercel.app/page/${x + 1}`
+                : `https://hostel-management-main-testtest.vercel.app/page/${x + 1}`
             }
           >
             <Pagination.Item active={x + 1 === page}>{x + 1}</Pagination.Item>

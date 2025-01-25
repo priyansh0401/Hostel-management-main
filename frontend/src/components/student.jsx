@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const Student = ({ stuentDetails: student }) => {
   return (
     <Card className="my-3 p-3 rounded">
-      <Link to={`/student/${student._id}`}>
+      <Link to={`https://hostel-management-main-testtest.vercel.app/student/${student._id}`}>
         <Image src={student.image} rounded fluid />
       </Link>
       <Card.Body>
-        <Link to={`/student/${student._id}`}>
+        <Link to={`https://hostel-management-main-testtest.vercel.app/student/${student._id}`}>
           <Card.Title as="div">
             <strong>{student.name}</strong>
           </Card.Title>

@@ -6,9 +6,9 @@ const SearchBox = ({history}) => {
   const submitHandler = (e) => {
       e.preventDefault ()
       if(keyword.trim()){
-        history.push(`/search/${keyword}`)
+        history.push(`https://hostel-management-main-testtest.vercel.app/search/${keyword}`)
       }else{
-          history.push(`/`)
+          history.push(`https://hostel-management-main-testtest.vercel.app/`)
       }
   }
   return (
